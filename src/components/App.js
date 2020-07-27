@@ -7,6 +7,7 @@ import Home from './Home'
 import CatalogProduct from './CatalogProduct'
 import ContactUs from './ContactUs'
 import Admin from './Admin'
+// import Footer from './Footer'
 
 export default function App() {
     return (
@@ -18,6 +19,7 @@ export default function App() {
                     <Route path="/catalog-product" exact component={CatalogProduct}/>
                     <Route path="/contact-us" exact component={ContactUs}/>
                     <Route path="/admin" exact component={Admin}/>
+                    {/* <Footer/> */}
                 </div>
             </BrowserRouter>
         </div>
