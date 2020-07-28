@@ -39,7 +39,7 @@
     background: url(../assets/Home/drew-beamer-Se7vVKzYxTI-unsplash.jpg);
     background-image: transparant;
     background-size: cover;
-    height: 100vh;
+    /* height: 100vh; */
     text-align: center;
 }
 
@@ -54,20 +54,16 @@
 }
 
 .home1{
-    height: 30vh;
+    /* height: 30vh; */
     background-color: #BFB8B4;
 }
 
 .home2{
-    height: 30vh;
+    /* height: 40vh; */
     background-color: #BF9C88;
 }
 
 .home3{
-    height: 30vh;
+    /* height: 55vh; */
     background-color: #3B3B40;
-}
-
-.textNavbar {
-    color: #bf9c88;
 }
