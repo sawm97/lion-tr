@@ -15,7 +15,7 @@ export default function Header() {
 
     return (
         <div className="container-fluid mw-100">
-            <Navbar className="bg-dark fixed-top" dark expand="md">
+            <Navbar className="fixed-top" style={{backgroundColor: "#0D276B"}} dark expand="md">
                 <NavbarBrand href="/" className="font-weight-bolder">LION-TR</NavbarBrand>
                 <NavbarToggler onClick={toggle} />
                 <Collapse isOpen={isOpen} navbar>
@@ -24,7 +24,7 @@ export default function Header() {
                             <NavLink href="/" className="text-light">Beranda</NavLink>
                         </NavItem>    
                         <NavItem>
-                            <NavLink href="/catalog-product" className="text-light">Katalog Produk</NavLink>
+                            <NavLink href="/product-catalog" className="text-light">Katalog Produk</NavLink>
                         </NavItem>    
                         <NavItem>
                             <NavLink href="/contact-us" className="text-light">Kontak Kami</NavLink>
