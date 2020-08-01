@@ -34,7 +34,8 @@ export default function ContactUs() {
                         <div className="col home2 rounded mx-3 h-auto p-2">
                             <h3 className="text-center">Lokasi Kami</h3>
                             <br/>
-                            <p className="text-center lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique cupiditate, tempora ratione explicabo possimus amet?</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15866.969623442017!2d106.9900241!3d-6.1652412!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x15898fadc067eab7!2sPT%20Tali%20Rejeki%20Distributor%20Rockwool%2C%20Glasswool%2C%20Material%20Peredam%20Suara%2C%20dan%20Material%20Insulation!5e0!3m2!1sid!2sid!4v1596281472963!5m2!1sid!2sid" 
+                            height="450" className="container-fluid border-secondary p-2" frameboallowfullscreen="" aria-hidden="false"></iframe>
                         </div>
                     </div>
                 </div>
