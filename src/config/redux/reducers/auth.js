@@ -1,15 +1,11 @@
 const init = {
-    id: "",
-    username: "",
-    token : "",
-    role_id : "",
-    status_subscription : ""
+    status: 0
 }
 
-export default (state = init , {type, payload}) => {
+export default (state = init , {type}) => {
     switch(type) {
         case 'LOGIN_SUCCESS':
-            return {...state, id: payload.id, username: payload.username, token : payload.token, role_id : payload.role_id, email : payload.email, status_subscription: payload.status_subscription}
+            return {...state, status: 1}
 
         case 'LOGOUT_SUCCESS':
             return {...init}

@@ -6,7 +6,7 @@ import Header from './Header'
 import Home from './Home'
 import ProductCatalog from './ProductCatalog'
 import ContactUs from './ContactUs'
-import Admin from './Admin'
+import Login from './Admin/Login'
 
 export default function App() {
     return (
@@ -17,7 +17,7 @@ export default function App() {
                     <Route path="/" exact component={Home}/>
                     <Route path="/product-catalog" exact component={ProductCatalog}/>
                     <Route path="/contact-us" exact component={ContactUs}/>
-                    <Route path="/admin" exact component={Admin}/>
+                    <Route path="/admin" exact component={Login}/>
                 </div>
             </BrowserRouter>
         </div>
