@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import {logoutAction} from '../config/redux/actions'
 import Footer from './Footer'
 import './style.css'
 
+
 export default function Home() {
+    const autoLogout = useDispatch()
+    useEffect(() => {
+        autoLogout(logoutAction())
+    })
+
     return (
         <div className="container mw-100 vh-100">
             <div className="row jumbotron mb-0 h-100">
