@@ -8,6 +8,7 @@ import './style.css'
 
 export default function Home() {
     const autoLogout = useDispatch()
+    
     useEffect(() => {
         autoLogout(logoutAction())
     })

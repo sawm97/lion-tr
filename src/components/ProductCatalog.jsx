@@ -1,9 +1,17 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {Link} from 'react-router-dom'
+import {useDispatch} from 'react-redux'
+import {logoutAction} from '../config/redux/actions'
 import Footer from './Footer'
 import './style.css'
 
 export default function ProductCatalog() {
+    const autoLogout = useDispatch()
+
+    useEffect(() => {
+        autoLogout(logoutAction())
+    })
+
     return (
         <div className="container mw-100 vh-100">
             <div className="row cover-pc mt-5 h-50">
