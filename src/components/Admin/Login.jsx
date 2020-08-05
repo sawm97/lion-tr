@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import axios from '../../config/api'
 import {loginAction} from '../../config/redux/actions'
 import Swal from 'sweetalert2'
+import '../style.css'
 
 export default function Login() {
     const status = useSelector(state => state.auth.status)
@@ -53,8 +54,23 @@ export default function Login() {
     } else {
         return (
             <div className="container mw-100 vh-100">
-                <div className="row home1 p-5 h-100">
-                    <h1 className="text-center">ADMIN PAGE</h1>
+                <div className="row home1 justify-content-around pt-5rem pb-5 h-100">
+                    <div className="col-3 home2 rounded h-50">
+                        <div className="list-group my-3" id="list-tab" role="tablist">
+                        <a className="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                        <a className="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                        <a className="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                        <a className="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                        </div>
+                    </div>
+                    <div className="col-8 home2 rounded ">
+                        <div className="tab-content my-3" id="nav-tabContent">
+                        <div className="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Home Page</div>
+                        <div className="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Profile Page</div>
+                        <div className="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Messages Page</div>
+                        <div className="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Settings Page</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
