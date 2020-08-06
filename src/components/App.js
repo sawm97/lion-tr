@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import {Route, BrowserRouter} from 'react-router-dom'
 import {useDispatch} from 'react-redux'
 import {loginAction} from '../config/redux/actions'
+import './style.css'
 
 // Components
 import Header from './Header'
@@ -22,7 +23,11 @@ export default function App() {
     }, [dispatch])
     
     return loading ? (
-        <h1 className="text-center">L O A D I N G ...</h1>
+        <div className="d-flex justify-content-center align-items-center vh-100 home3">
+            <div className="spinner-border text-light" role="status">
+                <span className="sr-only">Loading...</span>
+            </div>
+        </div>
     ) : (
         <div>
             <BrowserRouter>
